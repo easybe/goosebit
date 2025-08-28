@@ -1,6 +1,6 @@
 [project]
 name = "goosebit-forwarded-header"
-version = "0.1.0"
+version = "0.0.1"
 description = ""
 authors = [
     {name = "Ezra Buehler", email = "ezra.buehler@husqvarnagroup.com"}
