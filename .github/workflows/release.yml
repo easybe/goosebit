@@ -45,7 +45,7 @@ jobs:
           repository_name: "testpypi"
           repository_url: "https://test.pypi.org/legacy/"
 
-  release:
+  github:
     needs: pypi
     runs-on: ubuntu-latest
     steps:
