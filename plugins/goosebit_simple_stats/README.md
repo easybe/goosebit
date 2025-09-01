@@ -6,15 +6,21 @@ This plugin sets up a page which shows software count and/or device count.
 
 ## Installation
 
-E.g. in Dockerfile, install with pip:
+When using Docker, the plugin can be installed as follows:
 
-```txt
-pip install goosebit-simple-stats
+```dockerfile
+FROM upstreamdata/goosebit
+
+USER root
+
+RUN pip install --no-cache-dir goosebit-simple-stats
+
+USER goosebit
 ```
 
 ## Configuration
 
-Enable the plugin in `goosebit.yaml`:
+Enable the plugin in `goosebit.yaml` (or by setting the corresponding environment variable):
 
 ```yaml
 plugins:
